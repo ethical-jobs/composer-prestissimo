@@ -7,12 +7,12 @@ steps:
     image: plugins/docker
     settings:
       repo: ethicaljobs/composer-prestissimo
-      tags:
-        - 'latest'
-        - '${DRONE_TAG=${DRONE_COMMIT}}'
       username:
         from_secret: docker_username
       password:
-        from_secret: docker_password    
+        from_secret: docker_password         
+      tags:
+        - 'latest'
+        - '${DRONE_TAG=${DRONE_COMMIT}}' 
   
   
