@@ -1,3 +1,5 @@
-FROM composer:1.8.0
+FROM composer
+
+LABEL maintainer="Dean Tedesco <dean@ethicaljobs.com.au>"
 
 RUN composer global require hirak/prestissimo
